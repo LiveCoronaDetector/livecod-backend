@@ -1,0 +1,12 @@
+{
+    "database": {
+        "host": "localhost",
+        "databaseName": "livecod",
+        "username": "",
+        "password": "",
+        "dialect": "postgres"
+    },
+    "server": {
+        "port": 3000
+    }
+}
