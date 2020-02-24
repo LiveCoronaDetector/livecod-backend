@@ -1,20 +1,32 @@
 {
-  "name": "livecod-backend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LiveCoronaDetector/livecod-backend.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/LiveCoronaDetector/livecod-backend/issues"
-  },
-  "homepage": "https://github.com/LiveCoronaDetector/livecod-backend#readme"
+    "name": "livecod-backend",
+    "version": "1.0.0",
+    "description": "The backend server that powers livecod.",
+    "main": "src/index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon ./src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LiveCoronaDetector/livecod-backend.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/LiveCoronaDetector/livecod-backend/issues"
+    },
+    "homepage": "https://github.com/LiveCoronaDetector/livecod-backend#readme",
+    "dependencies": {
+        "config": "^3.2.6",
+        "express": "^4.17.1",
+        "i18n-iso-countries": "^4.3.1",
+        "pg": "^7.18.2",
+        "pg-hstore": "^2.3.3",
+        "sequelize": "^5.21.5"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
 }
