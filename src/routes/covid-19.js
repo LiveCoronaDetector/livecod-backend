@@ -1,5 +1,6 @@
 const Router = require("express").Router;
 const db = require("../database");
+const jwtAuth = require("../utils/jwtAuth");
 
 const router = Router();
 
@@ -26,7 +27,7 @@ router.get("/covid-19/:countryCode?/:subdivisionCode?", async (req, res) => {
     });
 });
 
-router.post("/covid-19/:countryCode/:subdivisionCode?", async (req, res) => {
+router.post("/covid-19/:countryCode/:subdivisionCode?", jwtAuth, async (req, res) => {
     // load params if present and convert it to upper case
     let countryCode =
         req.params.countryCode ? req.params.countryCode.toUpperCase() : undefined;

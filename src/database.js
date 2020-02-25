@@ -24,6 +24,11 @@ models.RegionalStatistics = require("./models/RegionalStatistics")(
     Sequelize
 );
 
+models.ApiKey = require("./models/ApiKey")(
+    sequelize,
+    Sequelize
+);
+
 sequelize
     .sync({ alter: true })
     .then((result) => {

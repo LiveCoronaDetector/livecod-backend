@@ -8,5 +8,8 @@
     },
     "server": {
         "port": 3000
+    },
+    "auth": {
+        "jwtSecret": ""
     }
 }
