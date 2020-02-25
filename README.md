@@ -7,7 +7,7 @@ The backend server that powers [livecod](https://livecorona.co.kr).
 ### Installation
 * Node.js v10+
 
-```shell
+```sh
 git clone https://github.com/LiveCoronaDetector/livecod-backend.git
 cd livecod-backend
 npm install
