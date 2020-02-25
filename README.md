@@ -19,8 +19,10 @@ npm run dev
 ```
 
 ## Documentation
+API version 1
+Prefix all requests with `/v1/`.
 ### Fetching data
-`GET /covid-19/:countryCode/:subdivisionCode?`
+`GET /v1/covid-19/:countryCode/:subdivisionCode?`
 
 #### Params
 | Param | Explanation |
@@ -29,13 +31,13 @@ npm run dev
 | subdivisionCode? | Optional [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) subdivision code (영토 구성 단위(시/군/구) 코드) |
 
 ### Creating data
-`POST /covid-19/:countryCode/:subdivisionCode?`
+`POST /v1/covid-19/:countryCode/:subdivisionCode?`
 
 #### Params
 | Param | Explanation |
 |---|---|
 | countryCode | [ISO 3166-1 alpha 2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code (2자리 국가 코드) |
-| subdivisionCode? | Optional [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) subdivision code (영토 구성 단위(시/군/구) 코드) |
+| subdivisionCode? | Optional [ISO 3166-2](https://en.wikipedia.org/wiki/ISO_3166-2) subdivision code (영토 구성 단위(도) 코드) |
 
 ### Header
 ```

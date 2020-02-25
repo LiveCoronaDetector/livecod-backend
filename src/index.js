@@ -10,7 +10,7 @@ const port = serverConfig.port;
 app.use(express.json())
 app.use(express.urlencoded())
 
-app.use("/api", require("./routes/covid-19"));
+app.use("/v1", require("./routes/covid-19"));
 
 app.listen(port, () => {
     console.log(`Server started`);
