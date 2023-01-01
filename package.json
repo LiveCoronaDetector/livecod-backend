@@ -19,7 +19,7 @@
     },
     "homepage": "https://github.com/LiveCoronaDetector/livecod-backend#readme",
     "dependencies": {
-        "config": "^3.2.6",
+        "config": "^3.3.8",
         "express": "^4.17.1",
         "i18n-iso-countries": "^4.3.1",
         "jsonwebtoken": "^8.5.1",
